@@ -1,0 +1,34 @@
+// Colors
+  // Primary
+  $lightRed: hsl(356, 100%, 66%); //CTA text
+  $varyLightRed: hsl(355, 100%, 74%);  //CTA Hover Background
+  $veryDarkBlue: hsl(208, 49%, 24%); //Headings
+
+  // Neutral
+  $white: hsl(0, 0%, 100%); //text
+  $grayishBlue: hsl(240, 2%, 79%); //footer text
+  $veryDarkGrayishBlue: hsl(207, 13%, 34%); //Body Copy
+  $veryDarkBlackBlue: hsl(240, 10%, 16%); //Footer Background
+
+  // Gradient
+    // Background Gradient - Intro / CTA Mobile Nav
+    $veryLightRed: hsl(13, 100%, 72%);
+    $lightRed: hsl(353, 100%, 62%);
+
+    // Background Gradient - Body
+    $veryDarkGrayBlue: hsl(237, 17%, 21%);
+    $veryDarkDesatBlue: hsl(237, 23%, 32%);
+
+
+// Typography
+  $bodyFontSize: 1rem; //Body font-size
+
+  // Fonts
+  $overPass: 'Overpass', sans-serif;
+  $overPasThin: 300;
+  $overPassBold: 600;
+
+  $ubuntu: 'Ubuntu', sans-serif;
+  $ubuntu400: 400;
+  $ubuntu500: 500;
+  $ubuntu700: 700;

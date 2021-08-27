@@ -1,0 +1,22 @@
+// Breakpoint Styles
+@media (max-width: 64rem) {
+  // Styles goes here...
+}
+
+// Breakpoints
+$breakpoint-desktop: ('desktop': '90rem');
+$breakpoint-mobile: ('mobile': '23.4375rem');
+
+// Breakpoint Desktop
+@mixin $breakpoint-desktop($screenSize) {
+  @media (min-width: map-get($breakpoint-desktop, $screenSize)) {
+    @content;
+  }
+}
+
+// Breakpoint Mobile
+@mixin $breakpoint-mobile($screenSize) {
+  @media (max-width: map-get($breakpoint-mobile, $screenSize)) {
+    @content;
+  }
+}
