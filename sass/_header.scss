@@ -2,3 +2,158 @@
 @import 'mixin';
 
 // Header Styles
+  // Mobile View
+  .header {
+    min-height: 37.5rem;
+    background: linear-gradient(to right, $veryLightRed, $lightRed);
+    border-radius: 0 0 0 6.25rem;
+
+
+    .header__image {
+      min-height: 37.5rem;
+      padding: 3.0625rem 3.5rem 3.0625rem 2.75rem;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: 20% 50%;
+      background-image: url('/images/bg-pattern-intro.svg');
+      border-radius: 0 0 0 6.25rem;
+
+
+      @include breakpoint-desktop(desktop) {
+        padding: 3.8125rem 10.375rem;
+      }
+
+      .header__nav {
+        display: flex;
+
+
+        &__logo {
+          width: 10%;
+          // margin-right: auto;
+
+        }
+
+        &__links {
+          // background-color: yellow;
+          color: $white;
+          font-size: 1.375rem;
+          width: 85%;
+          margin-top: 0.3rem;
+          margin-right: auto;
+          padding-left: 3.5rem;
+          display: none;
+
+
+          @include breakpoint-desktop(desktop) {
+            width: 90%;
+            display: flex;
+          }
+
+
+          .left__links {
+            display: flex;
+            padding-bottom: 2.75rem;
+
+
+            .products, .company, .connect {
+              position: relative;
+              padding-bottom: 2.75rem;
+
+
+              .dropdown__link {
+
+
+                &:hover {
+                  padding-bottom: 1rem;
+                  border-bottom: 2px solid $white;
+                }
+              }
+
+              > a {
+                color: $white;
+                font-size: 1.375rem;
+                font-weight: bold;
+              }
+
+              .dropdown {
+                position: absolute;
+                top: 2.75rem;
+                left: -1.75rem;
+                width: 15.9375rem;
+                padding: 2.1875rem 1.75rem;
+                background-color: $white;
+                border-radius: 0.3125rem;
+                transition: all 0.5s ease-in;
+                visibility: hidden;
+
+
+
+                .dropdown__link {
+                  text-decoration: underline;
+                }
+
+
+                li {
+
+                  &:not(:last-child) {
+                    margin-bottom: 1.375rem;
+                  }
+
+                  a {
+                    color: black;
+                  }
+                }
+              }
+
+              .displayDropDown {
+                visibility: visible;
+              }
+            }
+
+            li:not(:last-child) {
+              margin-right: 3rem;
+            }
+          }
+
+
+          .right__links {
+            margin-left: auto;
+
+            a {
+              color: $white;
+              font-size: 1.375rem;
+              font-weight: bold;
+            }
+
+            .login {
+
+            }
+
+            .signUp {
+              background-color: $white;
+              margin-left: 1rem;
+              color: black;
+              padding: 1rem;
+              border-radius: 0.625rem;
+            }
+
+
+          }
+        }
+
+        &__hamburger {
+          cursor: pointer;
+          margin-top: 0.3rem;
+          width: 5%;
+          margin-left: auto;
+
+
+          @include breakpoint-desktop(desktop) {
+            display: none;
+          }
+        }
+      }
+
+
+    }
+  }

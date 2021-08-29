@@ -12,6 +12,16 @@ body {
   font-size: $bodyFontSize;
 }
 
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+li {
+  list-style: none;
+  color: $white;
+}
+
 .attribution {
   font-size: 11px; text-align: center;
 
